@@ -128,3 +128,29 @@ button {
 .nav-menu-list.show {
   display: flex;
 }
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding: 6px 80px;
+  }
+
+  .toggle-menu-btn {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu-list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-menu-list li a {
+    padding: 4px 12px;
+  }
+}
