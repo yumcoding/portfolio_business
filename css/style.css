@@ -1,0 +1,33 @@
+:root {
+  --primary: #14bf98;
+  --bg-navy: #113448;
+  --bg-light: #f1f4f7;
+  --heading: #484a46;
+  --text: #787976;
+  --text-light: #c1cace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
