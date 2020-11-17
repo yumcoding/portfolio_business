@@ -63,7 +63,7 @@ button {
 
 .toggle-menu-btn {
   position: absolute;
-  right: 15px;
+  right: 16px;
   top: 15px;
   cursor: pointer;
   transition: all 0.5s ease-out;
