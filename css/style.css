@@ -50,3 +50,81 @@ button:active {
 button {
   cursor: pointer;
 }
+
+/* Header */
+
+.page-header {
+  width: 100%;
+  padding: 6px 16px;
+  background-color: var(--bg-navy);
+}
+
+/* Toggle menu btn */
+
+.toggle-menu-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.toggle-menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+
+.toggle-menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.toggle-menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle-menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 113px;
+  height: 32px;
+}
+
+.nav-menu-list {
+  margin: 12px 0;
+  display: none;
+  flex-direction: column;
+}
+
+.nav-menu-list li a {
+  display: block;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 0.875rem;
+}
+
+.nav-menu-list li a:hover,
+.nav-menu-list li a.current {
+  color: var(--primary);
+}
+
+.nav-menu-list.show {
+  display: flex;
+}
