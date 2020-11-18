@@ -169,7 +169,7 @@ button:active {
 }
 
 .landing * {
-  z-index: 10;
+  z-index: 1;
 }
 
 .landing-title {
