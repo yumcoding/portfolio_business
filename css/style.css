@@ -147,7 +147,7 @@ button:active {
 /* Landing */
 .landing {
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   padding: 0 15px;
   background-image: url("/images/header-background.jpg");
   background-repeat: no-repeat;
