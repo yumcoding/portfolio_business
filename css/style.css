@@ -235,6 +235,12 @@ button:active {
   /* Header */
   .page-header {
     padding: 6px 80px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .page-header.colored {
+    background-color: var(--bg-navy);
   }
 
   .toggle-menu-btn {
