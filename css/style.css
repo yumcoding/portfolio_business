@@ -68,6 +68,10 @@ button:active {
   width: 100%;
   padding: 6px 16px;
   background-color: var(--bg-navy);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 /* Toggle menu btn */
