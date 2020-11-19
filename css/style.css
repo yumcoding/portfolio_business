@@ -273,6 +273,39 @@ button:active {
   letter-spacing: 0.05em;
 }
 
+/* Intro */
+.intro {
+  overflow: hidden;
+  width: 100vw;
+  padding-top: 104px;
+  padding-bottom: 46px;
+}
+
+.intro-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container {
+  margin-bottom: 48px;
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   .page-header {
