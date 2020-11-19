@@ -34,6 +34,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5625;
+  margin-bottom: 16px;
+}
+
 input,
 button {
   border: none;
@@ -64,6 +73,35 @@ button:active {
 
 .px {
   padding: 0 15px;
+}
+
+.section-tag {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38461538462;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  color: var(--heading);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.21428571429;
+  margin-bottom: 22px;
+}
+
+.testimonial {
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.375;
+  font-style: normal;
 }
 
 /* Header */
@@ -222,6 +260,7 @@ button:active {
 }
 
 .landing-desc {
+  color: #fff;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.44444444444;
