@@ -277,11 +277,11 @@ button:active {
 .intro {
   overflow: hidden;
   width: 100vw;
-  padding-top: 104px;
-  padding-bottom: 46px;
 }
 
 .intro-main {
+  padding-top: 104px;
+  padding-bottom: 48px;
   display: flex;
   flex-direction: column;
 }
@@ -304,6 +304,11 @@ button:active {
 
 .img-container img:hover {
   transform: scale(1.2);
+}
+
+.intro-details {
+  padding-top: 48px;
+  padding-bottom: 46px;
 }
 
 @media screen and (min-width: 768px) {
