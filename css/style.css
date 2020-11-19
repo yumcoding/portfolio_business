@@ -62,6 +62,10 @@ button:active {
   color: var(--primary);
 }
 
+.px {
+  padding: 0 15px;
+}
+
 /* Header */
 
 .page-header {
@@ -148,7 +152,6 @@ button:active {
 .landing {
   width: 100vw;
   height: 80vh;
-  padding: 0 15px;
   background-image: url("/images/header-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
