@@ -3,7 +3,7 @@
   --bg-navy: #113448;
   --bg-navy-light: #153e52;
   --bg-input: #2a5d77;
-  --bg-light: #f1f4f7;
+  --bg-light: #fbfbfb;
   --heading: #484a46;
   --text: #787976;
   --text-light: #c1cace;
@@ -17,6 +17,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -58,6 +59,7 @@ button:active {
 }
 
 .btn {
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   background-color: var(--primary);
   color: #fff;
@@ -363,6 +365,103 @@ button:active {
 
 .detail-body p {
   text-align: center;
+}
+
+/* Services */
+
+.services {
+  background-color: var(--bg-light);
+  width: 100%;
+}
+
+.services-main {
+  padding: 106px 15px 20px;
+}
+
+.services-main .section-tag,
+.services-main .section-title {
+  text-align: center;
+}
+
+.services-main .section-title {
+  margin-bottom: 52px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-bottom: 90px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 36px 32px 34px;
+  border: 1px solid #ebe8e8;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card-body h3 {
+  color: var(--heading);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.27272727273;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.card-body-list {
+  margin-bottom: 24px;
+}
+
+.card-body-list li {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5625;
+  margin-bottom: 6px;
+}
+.card-body-list i {
+  color: var(--primary);
+}
+
+.card-body-list .list-text {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.card-body strong {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--heading);
+}
+
+.price {
+  color: var(--primary);
+}
+
+.card-btn-container {
+  margin-top: -22px;
+  text-align: center;
+}
+.card-btn {
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 12px 30px;
 }
 
 @media screen and (min-width: 768px) {
