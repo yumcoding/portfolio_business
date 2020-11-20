@@ -300,6 +300,7 @@ button:active {
 }
 
 .img-container img {
+  display: block;
   max-width: 100%;
   height: auto;
   transition: all 0.3s ease;
@@ -397,6 +398,7 @@ button:active {
 }
 
 .card img {
+  display: block;
   max-width: 100%;
   height: auto;
   border-top-left-radius: 6px;
