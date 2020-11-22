@@ -680,6 +680,12 @@ button:active {
   .detail-body p {
     text-align: left;
   }
+
+  /* Services-detail*/
+  .acco-list {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
