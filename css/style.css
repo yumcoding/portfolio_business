@@ -292,21 +292,21 @@ button:active {
   margin-bottom: 48px;
 }
 
-.img-container {
+.intro .img-container {
   width: 100%;
   height: auto;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.img-container img {
+.intro .img-container img {
   display: block;
   max-width: 100%;
   height: auto;
   transition: all 0.3s ease;
 }
 
-.img-container img:hover {
+.intro .img-container img:hover {
   transform: scale(1.2);
 }
 
