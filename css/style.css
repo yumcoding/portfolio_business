@@ -399,13 +399,16 @@ button:active {
 
 .card img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  max-width: 698px;
   height: auto;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
 .card-body {
+  width: 100%;
+  max-width: 698px;
   background-color: #fff;
   padding: 36px 32px 34px;
   border: 1px solid #ebe8e8;
