@@ -709,4 +709,30 @@ button:active {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  /* Services-detail */
+  .services-detail {
+    width: 100%;
+  }
+  .services-accordion {
+    flex-direction: row;
+  }
+  .area-1,
+  .area-2 {
+    width: 50%;
+  }
+
+  .area-1 {
+    height: 555px;
+  }
+
+  .area-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .acco-list {
+    padding: 0 30px;
+  }
 }
