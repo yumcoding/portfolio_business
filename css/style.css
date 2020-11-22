@@ -471,9 +471,6 @@ button:active {
   padding: 12px 30px;
 }
 
-@media screen and (min-width: 992px) {
-}
-
 @media screen and (min-width: 768px) {
   /* Header */
   .page-header {
@@ -586,5 +583,28 @@ button:active {
   .detail-body h3,
   .detail-body p {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Services */
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container {
+    flex-direction: row;
+  }
+
+  .services-main {
+    width: 100%;
+    max-width: 1110px;
+  }
+
+  .card-container .card:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
