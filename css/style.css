@@ -881,10 +881,6 @@ button:active {
   .area-1,
   .area-2 {
     width: 50%;
-  }
-
-  .area-1,
-  .area-2 {
     height: 555px;
   }
 
@@ -910,10 +906,15 @@ button:active {
 
   .tab.area-2 {
     max-width: 88%;
-    padding: 108px 80px 0;
+    padding: 108px 0 0;
   }
 
   .tab-title-container {
+    padding: 0 40px;
     justify-content: flex-start;
+  }
+
+  #tab-1 {
+    padding: 0 40px;
   }
 }
