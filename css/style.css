@@ -4,10 +4,10 @@
   --bg-navy-light: #153e52;
   --bg-input: #2a5d77;
   --bg-light: #fbfbfb;
+  --bg-progress: #f9fafc;
   --heading: #484a46;
   --text: #787976;
   --text-light: #c1cace;
-  --tab-title: #c1cace;
 }
 
 * {
@@ -27,6 +27,7 @@ h3,
 h4,
 h5 {
   font-family: "Montserrat", sans-serif;
+  color: var(--heading);
 }
 
 ol,
@@ -591,14 +592,17 @@ button:active {
 
 .tab-title {
   cursor: pointer;
-  color: var(--tab-title);
+  margin-right: 26px;
+  margin-bottom: 14px;
+  transition: all 0.2s ease;
+}
+
+.tab-title h3 {
+  color: var(--text-light);
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
-  margin-right: 26px;
-  margin-bottom: 14px;
-  transition: all 0.2s ease;
 }
 
 .tab-title:hover,
