@@ -2,6 +2,9 @@ const accoList = document.querySelector(".acco-list");
 const accoTitles = document.querySelectorAll(".acco-title");
 const accoDescs = document.querySelectorAll(".acco-desc");
 
+accoTitles[0].classList.add("active");
+accoDescs[0].classList.add("show");
+
 const showAcco = (e) => {
   let target = e.target;
   while (!target.classList.contains("acco-title")) {
