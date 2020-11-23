@@ -7,6 +7,7 @@
   --heading: #484a46;
   --text: #787976;
   --text-light: #c1cace;
+  --tab-title: #c1cace;
 }
 
 * {
@@ -22,7 +23,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -565,6 +568,48 @@ button:active {
   display: block;
   opacity: 1;
   height: 100%;
+}
+
+/* Services-tab */
+.services-tab {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tab.area-2 {
+  padding: 32px 0 92px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.tab-title-container {
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab-title {
+  cursor: pointer;
+  color: var(--tab-title);
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 26px;
+  margin-bottom: 14px;
+  transition: all 0.2s ease;
+}
+
+.tab-title:hover,
+.tab-title.active {
+  color: var(--primary);
+}
+
+.tab-title i {
+  font-size: 14px;
+  vertical-align: 21%;
+  margin-right: 2px;
 }
 
 @media screen and (min-width: 768px) {
