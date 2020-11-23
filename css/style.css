@@ -883,7 +883,8 @@ button:active {
     width: 50%;
   }
 
-  .area-1 {
+  .area-1,
+  .area-2 {
     height: 555px;
   }
 
