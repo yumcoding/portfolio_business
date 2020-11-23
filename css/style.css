@@ -901,4 +901,8 @@ button:active {
   .services-tab {
     flex-direction: row-reverse;
   }
+
+  .tab-content-container {
+    padding: 0 40px;
+  }
 }
