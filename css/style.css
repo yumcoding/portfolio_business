@@ -579,8 +579,6 @@ button:active {
 
 .tab.area-2 {
   padding: 32px 0 92px;
-  max-width: 90%;
-  margin: 0 auto;
 }
 
 .tab-title-container {
@@ -902,19 +900,5 @@ button:active {
   /* Services-tab */
   .services-tab {
     flex-direction: row-reverse;
-  }
-
-  .tab.area-2 {
-    max-width: 88%;
-    padding: 108px 0 0;
-  }
-
-  .tab-title-container {
-    padding: 0 40px;
-    justify-content: flex-start;
-  }
-
-  #tab-1 {
-    padding: 0 40px;
   }
 }
