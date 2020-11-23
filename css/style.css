@@ -736,4 +736,8 @@ button:active {
     padding: 0 30px;
     max-width: 510px;
   }
+
+  .title-text {
+    width: 100%;
+  }
 }
