@@ -786,6 +786,11 @@ button:active {
     max-width: 70%;
     margin: 0 auto;
   }
+
+  /* Services-tab */
+  .tab.area-2 {
+    max-width: 70%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -839,5 +844,19 @@ button:active {
 
   .title-text {
     width: 100%;
+  }
+
+  /* Services-tab */
+  .services-tab {
+    flex-direction: row-reverse;
+  }
+
+  .tab.area-2 {
+    max-width: 88%;
+    padding: 108px 80px 0;
+  }
+
+  .tab-title-container {
+    justify-content: flex-start;
   }
 }
