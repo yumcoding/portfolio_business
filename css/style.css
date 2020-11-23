@@ -667,6 +667,39 @@ button:active {
   width: 90%;
 }
 
+/* tab-2 */
+#tab-1 {
+  display: none;
+}
+
+.content-list {
+  margin-top: 28px;
+}
+
+.content-item {
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.item-numbering {
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.item-text {
+  margin-left: 14px;
+  margin-bottom: 0;
+}
+
+.item-text strong {
+  color: var(--heading);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5625;
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   .page-header {
