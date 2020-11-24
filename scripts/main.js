@@ -1,7 +1,14 @@
+// DOM elements related to Accordion Menu
 const accoList = document.querySelector(".acco-list");
 const accoTitles = document.querySelectorAll(".acco-title");
 const accoDescs = document.querySelectorAll(".acco-desc");
 
+// DOM elements related to Tab Menu
+const tabTitleContainer = document.querySelector(".tab-title-container");
+const tabTitles = document.querySelectorAll(".tab-title");
+const tabContents = document.querySelectorAll(".tab-content");
+
+// show accordion menu
 accoTitles[0].classList.add("active");
 accoDescs[0].classList.add("show");
 
@@ -33,4 +40,42 @@ const showAcco = (e) => {
   }
 };
 
+// show tab menu
+
+tabTitles[0].classList.add("active");
+tabContents[0].classList.add("show");
+
+const showTab = (e) => {
+  let target = e.target;
+  while (!target.classList.contains("tab-title")) {
+    target = target.parentNode;
+
+    if (target.nodeName === "BODY") {
+      target = null;
+      return;
+    }
+  }
+
+  const tabId = target.getAttribute("data-tab");
+
+  tabTitles.forEach((title) => {
+    if (title.classList.contains("active")) {
+      title.classList.remove("active");
+    }
+  });
+
+  tabContents.forEach((content) => {
+    if (content.classList.contains("show")) {
+      content.classList.remove("show");
+    }
+
+    if (content.id === tabId) {
+      content.classList.add("show");
+    }
+  });
+  target.classList.add("active");
+};
+
+// Event Listeners
 accoList.addEventListener("click", showAcco);
+tabTitleContainer.addEventListener("click", showTab);
