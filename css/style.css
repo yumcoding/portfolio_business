@@ -874,6 +874,7 @@ button:active {
   /* Services-tab */
   .tab.area-2 {
     max-width: 70%;
+    padding-top: 100px;
   }
 
   /* tab-2 */
