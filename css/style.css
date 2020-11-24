@@ -224,6 +224,7 @@ button:active {
 }
 
 .landing-title {
+  color: #fff;
   display: flex;
   flex-direction: column;
   font-weight: 700;
