@@ -1134,6 +1134,11 @@ button {
   .slider-item blockquote {
     width: 260px;
   }
+
+  /* Call Me */
+  .call-me-container {
+    max-width: 540px;
+  }
 }
 
 @media screen and (min-width: 992px) {
