@@ -789,7 +789,7 @@ button {
 }
 
 .slider-btn.prev {
-  left: 5x;
+  left: 5px;
 }
 
 .slider-btn.next {
@@ -1122,5 +1122,38 @@ button {
 
   .tab-content-container {
     padding: 0 40px;
+  }
+
+  /* Slider Button */
+
+  .slider-btn.prev {
+    left: -30px;
+  }
+
+  .slider-btn.next {
+    right: -30px;
+  }
+
+  /* Slider List */
+  .slider-list {
+    justify-content: space-between;
+  }
+  /* Slider Item */
+
+  .slider-item {
+    width: 265px;
+  }
+
+  .slider-item:nth-child(4) {
+    z-index: 2;
+    left: 100%;
+    opacity: 1;
+    display: flex;
+  }
+
+  .slider-item:nth-child(n + 5) {
+    z-index: 1;
+    left: 100%;
+    opacity: 0;
   }
 }
