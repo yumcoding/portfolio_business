@@ -526,7 +526,25 @@
               </li>
             </ul>
           </div>
-          <form action="#" method="POST" class="call-me-form"></form>
+          <form action="#" method="POST" class="call-me-form">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Phone" />
+            <input type="email" placeholder="Email" />
+            <select name="interest">
+              <option value disabled selected>Interested in...</option>
+              <option value="ground">Off The Ground</option>
+              <option value="growth">Accelrated Growth</option>
+              <option value="domination">Market Domination</option>
+            </select>
+            <div class="check-box">
+              <input type="checkbox" value="agree-to-terms" required />
+              <span>
+                I agree with Aria's stated <a href="#">Privacy Policy</a> and
+                <a href="#">Terms &amp; Conditions</a>
+              </span>
+            </div>
+            <button type="submit" class="btn call-btn">Call Me</button>
+          </form>
         </div>
       </section>
     </main>
