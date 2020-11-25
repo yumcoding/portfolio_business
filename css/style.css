@@ -812,6 +812,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s;
   transition: all 0.7s ease;
 }
 
