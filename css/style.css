@@ -102,6 +102,22 @@ button {
   margin-bottom: 22px;
 }
 
+.section-list li {
+  display: flex;
+  margin-bottom: 6px;
+}
+.section-list li i {
+  color: var(--primary);
+  font-size: 10px;
+  line-height: 2.2;
+}
+
+.section-list li p {
+  margin-left: 10px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
 .testimonial {
   font-style: italic;
 }
@@ -866,6 +882,22 @@ button {
 .slider-item .testimonial-author {
   display: block;
   text-align: center;
+}
+
+/* Call Me */
+.call-me {
+  background-color: var(--bg-navy-light);
+  padding: 106px 0 90px;
+}
+
+.call-me-container {
+  padding: 0 15px;
+}
+
+.call-me-content .section-title,
+.call-me-content .section-desc,
+.call-me-content .section-list li p {
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
