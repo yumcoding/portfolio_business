@@ -1232,4 +1232,24 @@ button {
     left: 100%;
     opacity: 0;
   }
+
+  /* Call Me */
+  .call-me {
+    padding-top: 112px;
+  }
+  .call-me-container {
+    max-width: 960px;
+    display: flex;
+  }
+  .call-me-content,
+  .call-me-form {
+    padding: 0 15px;
+    margin: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .call-me-content {
+    margin-bottom: 0;
+  }
 }
