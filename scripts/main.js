@@ -8,6 +8,11 @@ const tabTitleContainer = document.querySelector(".tab-title-container");
 const tabTitles = document.querySelectorAll(".tab-title");
 const tabContents = document.querySelectorAll(".tab-content");
 
+// DOM elements related to Slider
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const sliderList = document.querySelector(".slider-list");
+
 // show accordion menu
 accoTitles[0].classList.add("active");
 accoDescs[0].classList.add("show");
@@ -76,6 +81,23 @@ const showTab = (e) => {
   target.classList.add("active");
 };
 
+// Slider
+let items = document.querySelectorAll(".slider-item");
+
+const showPrev = () => {
+  sliderList.insertBefore(items[items.length - 1], items[0]);
+  items = document.querySelectorAll(".slider-item");
+};
+
+const showNext = () => {
+  sliderList.appendChild(items[0]);
+  items = document.querySelectorAll(".slider-item");
+};
+
 // Event Listeners
 accoList.addEventListener("click", showAcco);
+
 tabTitleContainer.addEventListener("click", showTab);
+
+prevBtn.addEventListener("click", showPrev);
+nextBtn.addEventListener("click", showNext);
