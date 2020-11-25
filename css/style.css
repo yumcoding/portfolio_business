@@ -1007,6 +1007,62 @@ button {
   .content-list:first-child {
     margin-right: 32px;
   }
+
+  /* Slider List */
+  .slider-list {
+    justify-content: flex-start;
+  }
+
+  /* Slider Item*/
+
+  .slider-item {
+    width: 50%;
+    height: 250px;
+    justify-content: flex-start;
+    animation: moveLeft 1s;
+  }
+
+  .slider-item:nth-child(1) {
+    z-index: 1;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  .slider-item:nth-child(2) {
+    z-index: 2;
+    left: 0;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .slider-item:nth-child(3) {
+    z-index: 2;
+    left: 50%;
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+  }
+
+  .slider-item:nth-child(n + 4) {
+    z-index: 1;
+    left: 100%;
+    opacity: 0;
+    display: none;
+  }
+
+  @keyframes moveLeft {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .slider-item blockquote {
+    width: 260px;
+  }
 }
 
 @media screen and (min-width: 992px) {
