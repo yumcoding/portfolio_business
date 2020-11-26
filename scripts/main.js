@@ -13,6 +13,11 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 const sliderList = document.querySelector(".slider-list");
 
+// DOM elements related to Filter
+const filterBtnContainer = document.querySelector(".btn-container");
+const filterBtns = document.querySelectorAll(".btn-filter");
+const projects = document.querySelectorAll(".project");
+
 // show accordion menu
 accoTitles[0].classList.add("active");
 accoDescs[0].classList.add("show");
@@ -94,6 +99,36 @@ const showNext = () => {
   items = document.querySelectorAll(".slider-item");
 };
 
+//filter elements
+const filterElem = (e) => {
+  //test if user clicks the space between buttons
+  if (e.target.classList.contains("btn-container")) {
+    return;
+  }
+
+  const targetBtn = e.target;
+  const targetData = targetBtn.getAttribute("data-filter");
+
+  // remove active class from unselected btns
+  filterBtns.forEach((btn) => {
+    if (btn.classList.contains("active")) {
+      btn.classList.remove("active");
+    }
+  });
+
+  // add active class to selected btn
+  targetBtn.classList.add("active");
+
+  //filter selected projects
+  projects.forEach((project) => {
+    if (project.classList.contains(targetData)) {
+      project.style.display = "block";
+    } else {
+      project.style.display = "none";
+    }
+  });
+};
+
 // Event Listeners
 accoList.addEventListener("click", showAcco);
 
@@ -101,3 +136,5 @@ tabTitleContainer.addEventListener("click", showTab);
 
 prevBtn.addEventListener("click", showPrev);
 nextBtn.addEventListener("click", showNext);
+
+filterBtnContainer.addEventListener("click", filterElem);
