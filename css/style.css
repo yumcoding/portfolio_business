@@ -958,10 +958,11 @@ button {
   margin-bottom: 52px;
 }
 
-.btn-container {
+.projects .btn-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .btn-filter {
