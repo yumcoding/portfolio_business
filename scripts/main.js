@@ -164,6 +164,16 @@ const closeModal = (e) => {
   }
 };
 
+const closeModalBtn = (e) => {
+  if (
+    e.target.classList.contains("modal-close") ||
+    e.target.classList.contains("fa-times")
+  ) {
+    modalContainer.style.display = "none";
+    body.classList.remove("not-scroll");
+  }
+};
+
 // Event Listeners
 accoList.addEventListener("click", showAcco);
 
@@ -176,6 +186,7 @@ filterBtnContainer.addEventListener("click", filterElem);
 
 projectContainer.addEventListener("click", showModal);
 modalContainer.addEventListener("click", closeModal);
+modalContainer.addEventListener("click", closeModalBtn);
 window.addEventListener("click", (e) => {
   if (e.target.classList.contains("modal-container")) {
     modalContainer.style.display = "none";
