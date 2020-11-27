@@ -1368,6 +1368,31 @@ button {
   .call-me-container {
     max-width: 540px;
   }
+
+  /* Modal */
+  .modal-content {
+    width: 600px;
+    max-width: 100%;
+    margin: 40px auto;
+  }
+
+  .modal-close {
+    top: 7px;
+    right: 10px;
+  }
+
+  .modal-img {
+    width: 90%;
+    height: 400px;
+  }
+
+  .modal-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .modal-desc {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 992px) {
