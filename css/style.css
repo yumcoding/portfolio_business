@@ -1204,6 +1204,7 @@ button {
 }
 
 .team-card h5 {
+  color: var(--text);
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1212,6 +1213,8 @@ button {
 }
 
 .team-card p {
+  color: var(--heading);
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.375;
   margin-bottom: 12px;
