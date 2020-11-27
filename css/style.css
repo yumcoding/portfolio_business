@@ -1168,6 +1168,80 @@ button {
   overflow: hidden;
 }
 
+/* Our Team */
+.our-team {
+  padding: 102px 15px 54px;
+}
+
+.team-container .section-title {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.team-container .section-desc {
+  margin-bottom: 56px;
+}
+
+.team-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-card {
+  margin-bottom: 56px;
+}
+
+.team-card img {
+  margin-bottom: 24px;
+}
+
+.team-card h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.44444444444;
+  margin-bottom: 4px;
+}
+
+.team-card p {
+  font-weight: 700;
+  line-height: 1.375;
+  margin-bottom: 12px;
+}
+.team-card .social-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 0 2px;
+  position: relative;
+}
+
+.social .hexagon {
+  background-size: 28px 28px;
+}
+
+.social i {
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   .page-header {
@@ -1509,6 +1583,7 @@ button {
 
   /* Modal */
   .modal-content {
+    top: 50%;
     width: 1000px;
     flex-direction: row;
     align-items: flex-start;
