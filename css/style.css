@@ -1173,6 +1173,13 @@ button {
   padding: 102px 15px 54px;
 }
 
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .team-container .section-title {
   margin-bottom: 12px;
   text-align: center;
