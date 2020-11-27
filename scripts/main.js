@@ -18,6 +18,12 @@ const filterBtnContainer = document.querySelector(".btn-container");
 const filterBtns = document.querySelectorAll(".btn-filter");
 const projects = document.querySelectorAll(".project");
 
+//DOM elements related to Modal
+const body = document.getElementsByTagName("body")[0];
+const projectContainer = document.querySelector(".project-grid-container");
+const modalContainer = document.querySelector(".modal-container");
+const modalContents = document.querySelectorAll(".modal-content");
+
 // show accordion menu
 accoTitles[0].classList.add("active");
 accoDescs[0].classList.add("show");
@@ -129,6 +135,35 @@ const filterElem = (e) => {
   });
 };
 
+// Modal
+
+const showModal = (e) => {
+  let projectId;
+  if (e.target.classList.contains("btn-project")) {
+    projectId = e.target.id;
+  } else {
+    projectId = null;
+    return;
+  }
+
+  modalContents.forEach((modal) => {
+    if (modal.getAttribute("data-modal") === projectId) {
+      modalContainer.style.display = "block";
+      modal.style.display = "flex";
+      body.classList.add("not-scroll");
+    } else {
+      modal.style.display = "none";
+    }
+  });
+};
+
+const closeModal = (e) => {
+  if (e.target.classList.contains("back")) {
+    modalContainer.style.display = "none";
+    body.classList.remove("not-scroll");
+  }
+};
+
 // Event Listeners
 accoList.addEventListener("click", showAcco);
 
@@ -138,3 +173,12 @@ prevBtn.addEventListener("click", showPrev);
 nextBtn.addEventListener("click", showNext);
 
 filterBtnContainer.addEventListener("click", filterElem);
+
+projectContainer.addEventListener("click", showModal);
+modalContainer.addEventListener("click", closeModal);
+window.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal-container")) {
+    modalContainer.style.display = "none";
+    body.classList.remove("not-scroll");
+  }
+});
