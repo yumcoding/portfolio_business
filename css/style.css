@@ -1471,6 +1471,11 @@ button {
     width: 90%;
   }
   /* Our Team */
+  .our-team .section-desc {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .team-card-group {
     flex-direction: row;
   }
