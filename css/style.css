@@ -1467,6 +1467,14 @@ button {
   .modal-desc {
     width: 90%;
   }
+  /* Our Team */
+  .team-card-group {
+    flex-direction: row;
+  }
+
+  .team-card {
+    margin: 0 24px 56px;
+  }
 }
 
 @media screen and (min-width: 992px) {
