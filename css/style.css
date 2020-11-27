@@ -1650,12 +1650,17 @@ button {
   }
 
   /* Our Team */
+
   .team-container {
     max-width: 960px;
+    margin: 0 auto;
   }
+
   .team-card-container {
+    max-width: 100%;
     flex-direction: row;
   }
+
   .team-container .section-desc {
     width: 65%;
   }
