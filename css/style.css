@@ -1648,7 +1648,11 @@ button {
   .modal-btn:last-child {
     margin-right: 0;
   }
+
   /* Our Team */
+  .team-container {
+    max-width: 960px;
+  }
   .team-card-container {
     flex-direction: row;
   }
