@@ -1207,6 +1207,8 @@ button {
 }
 
 .team-card img {
+  width: 208px;
+  height: 180px;
   margin-bottom: 24px;
 }
 
