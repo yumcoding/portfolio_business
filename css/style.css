@@ -1532,6 +1532,10 @@ button {
     margin: 10px 0 20px;
   }
 
+  .modal-desc .testimonial-author {
+    display: block;
+    text-align: right;
+  }
   .modal-btn-container {
     text-align: right;
   }
