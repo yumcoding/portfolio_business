@@ -1638,6 +1638,18 @@ button {
   .modal-btn:last-child {
     margin-right: 0;
   }
+  /* Our Team */
+  .team-card-container {
+    flex-direction: row;
+  }
+  .team-container .section-desc {
+    width: 65%;
+  }
+  .team-card {
+    width: 205px;
+    max-width: 100%;
+    margin: 0 12px 56px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
