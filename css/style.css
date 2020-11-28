@@ -1309,6 +1309,60 @@ button {
   line-height: 1.42857142857;
   margin-left: 8px;
 }
+
+/* Contact */
+.contact {
+  padding: 106px 15px 90px;
+}
+
+.contact-content {
+  margin-bottom: 48px;
+}
+
+.contact-content address {
+  margin-bottom: 36px;
+  font-style: normal;
+}
+
+.address-item {
+  color: var(--text);
+}
+
+.address-item a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.address-item i {
+  color: var(--primary);
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.contact-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2727272727;
+  margin-bottom: 16px;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-content .social {
+  width: 52px;
+  height: 52px;
+  margin: 0 4px 12px 2px;
+}
+.contact-content .social .hexagon {
+  background-size: 52px 52px;
+}
+
+.contact-content .social i {
+  font-size: 24px;
+}
 @media screen and (min-width: 576px) {
   /* Intro */
   .intro-main,
