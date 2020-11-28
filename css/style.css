@@ -1300,8 +1300,14 @@ button {
   margin-left: 8px;
 }
 @media screen and (min-width: 576px) {
+  /* Intro */
   .intro-main,
   .intro-details {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  /* About */
+  .about-container {
     max-width: 540px;
     margin: 0 auto;
   }
