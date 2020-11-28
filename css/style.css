@@ -1360,11 +1360,6 @@ button {
     align-items: flex-start;
   }
 
-  .detail-card:nth-child(2) {
-    margin-right: 40px;
-    margin-left: 40px;
-  }
-
   .detail-body h3,
   .detail-body p {
     text-align: left;
