@@ -1512,6 +1512,26 @@ button {
     max-width: 530px;
   }
 
+  .intro-details {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 960px;
+  }
+
+  .detail-card {
+    max-width: 280px;
+    align-items: flex-start;
+    vertical-align: top;
+  }
+
+  .detail-card:nth-child(2) {
+    margin: 0 40px 40px;
+  }
+  .detail-body h3,
+  .detail-body p {
+    text-align: left;
+  }
+
   /* Services */
   .services {
     display: flex;
