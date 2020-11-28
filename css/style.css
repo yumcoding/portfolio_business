@@ -1492,6 +1492,26 @@ button {
 }
 
 @media screen and (min-width: 992px) {
+  /* Intro */
+  .intro-main {
+    max-width: 960px;
+    padding-top: 110px;
+    flex-direction: row;
+  }
+
+  .text-container {
+    max-width: 42%;
+    margin-bottom: 0;
+  }
+
+  .intro .img-container {
+    max-width: 58%;
+  }
+
+  .intro-main .img-container img {
+    max-width: 530px;
+  }
+
   /* Services */
   .services {
     display: flex;
