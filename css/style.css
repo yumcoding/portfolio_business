@@ -1335,10 +1335,9 @@ button {
   }
 
   .intro-main {
-    width: 100%;
-    max-width: 1110px;
+    /* width: 100%; */
+    max-width: 720px;
     padding-top: 110px;
-    flex-direction: row;
   }
 
   .text-container {
@@ -1352,8 +1351,8 @@ button {
   }
 
   .intro-details {
-    width: 100%;
-    max-width: 1110px;
+    /* width: 100%; */
+    max-width: 720px;
     padding: 48px 15px 46px 15px;
     flex-direction: row;
   }
