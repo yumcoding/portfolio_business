@@ -1242,6 +1242,10 @@ button {
   background-size: 28px 28px;
 }
 
+.social:hover .hexagon {
+  background-image: url("/images/hexagon-white.svg");
+}
+
 .social i {
   color: #fff;
   font-size: 11px;
@@ -1249,6 +1253,10 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.social:hover i {
+  color: var(--primary);
 }
 
 /* About */
