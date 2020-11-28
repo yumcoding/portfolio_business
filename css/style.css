@@ -1251,6 +1251,54 @@ button {
   transform: translate(-50%, -50%);
 }
 
+/* About */
+.about {
+  padding: 110px 15px 84px;
+}
+
+.about-img-container {
+  margin-bottom: 48px;
+}
+
+.about-img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.about-content-container .section-list {
+  margin-bottom: 24px;
+}
+
+.about-number-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-number {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.about-number dd {
+  color: var(--primary);
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.13043478261;
+}
+
+.about-number dt {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857142857;
+  margin-left: 8px;
+}
 @media screen and (min-width: 576px) {
   .intro-main,
   .intro-details {
