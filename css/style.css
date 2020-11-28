@@ -1347,8 +1347,11 @@ button {
   }
 
   .intro-main .img-container {
-    max-width: 635px;
     padding: 0 15px;
+  }
+
+  .intro-main .img-container img {
+    max-width: 690px;
   }
 
   .intro-details {
