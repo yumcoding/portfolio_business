@@ -1356,10 +1356,6 @@ button {
     padding: 48px 15px 46px 15px;
   }
 
-  .detail-card {
-    align-items: flex-start;
-  }
-
   .detail-body h3,
   .detail-body p {
     text-align: left;
