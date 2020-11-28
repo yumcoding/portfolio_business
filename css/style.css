@@ -1354,7 +1354,6 @@ button {
     /* width: 100%; */
     max-width: 720px;
     padding: 48px 15px 46px 15px;
-    flex-direction: row;
   }
 
   .detail-card {
