@@ -1278,6 +1278,7 @@ button {
 }
 
 .about-number {
+  width: 152px;
   margin-bottom: 12px;
   display: flex;
   flex-direction: row-reverse;
