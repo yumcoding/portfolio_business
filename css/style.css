@@ -891,22 +891,26 @@ button {
 }
 
 /* Call Me Form */
-.call-me-form {
+
+.form {
   display: flex;
   flex-direction: column;
+}
+.form input,
+.form select {
+  padding: 12px 2px 12px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .call-me-form input,
 .call-me-form select {
   background-color: #2a5d77;
   color: #fff;
-  padding: 12px 2px 12px 20px;
   border: 1px solid #39728f;
-  border-radius: 4px;
-  margin-bottom: 20px;
 }
 
-.call-me-form input[type="checkbox"] {
+.form input[type="checkbox"] {
   margin-bottom: 0;
 }
 
@@ -927,7 +931,7 @@ button {
   text-decoration: underline;
 }
 
-.call-btn {
+.form-btn {
   width: 100%;
   height: 44px;
   padding: 1px 6px;
