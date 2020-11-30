@@ -1978,6 +1978,23 @@ button {
   .contact-form {
     padding-top: 25px;
   }
+
+  /* Footer */
+  .footer-container {
+    max-width: 960px;
+  }
+
+  .footer-content,
+  .footer-list-container {
+    width: 50%;
+  }
+
+  .footer-content {
+    margin-right: 80px;
+  }
+  .footer-content p {
+    max-width: 460px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
