@@ -1469,7 +1469,8 @@ button {
   .intro-main,
   .intro-details,
   .about-container,
-  .contact-container {
+  .contact-container,
+  .footer-container {
     max-width: 540px;
     margin: 0 auto;
   }
