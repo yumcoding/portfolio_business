@@ -1706,10 +1706,22 @@ button {
     margin: 0 24px 56px;
   }
 
-  /* About & Contact */
+  /* About, Contact & Footer */
   .about-container,
-  .contact-container {
+  .contact-container,
+  .footer-container {
     max-width: 720px;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+  .footer-list-container {
+    display: flex;
+  }
+  .footer-list-group {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
