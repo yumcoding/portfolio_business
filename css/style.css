@@ -1316,6 +1316,7 @@ button {
 
 /* Contact */
 .contact {
+  background-color: var(--bg-light);
   padding: 106px 15px 90px;
 }
 
