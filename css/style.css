@@ -1404,16 +1404,14 @@ button {
 @media screen and (min-width: 576px) {
   /* Intro */
   .intro-main,
-  .intro-details {
+  .intro-details,
+  .about-container,
+  .contact-container
+   {
     max-width: 540px;
     margin: 0 auto;
   }
-  /* About */
-  .about-container {
-    max-width: 540px;
-    margin: 0 auto;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   /* Header */
