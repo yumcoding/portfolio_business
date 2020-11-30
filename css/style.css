@@ -1406,13 +1406,11 @@ button {
   .intro-main,
   .intro-details,
   .about-container,
-  .contact-container
-   {
+  .contact-container {
     max-width: 540px;
     margin: 0 auto;
   }
-
-
+}
 @media screen and (min-width: 768px) {
   /* Header */
   .page-header {
@@ -1791,6 +1789,7 @@ button {
     max-width: 960px;
     display: flex;
   }
+
   .call-me-content,
   .call-me-form {
     padding: 0 15px;
@@ -1885,6 +1884,19 @@ button {
 
   .about-number-list {
     justify-content: flex-start;
+  }
+
+  /* Contact */
+  .contact-container {
+    display: flex;
+    max-width: 960px;
+  }
+  .contact-content,
+  .contact-form {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    margin: 0;
   }
 }
 
