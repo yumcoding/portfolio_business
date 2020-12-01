@@ -1452,7 +1452,7 @@ button {
 
 .footer-copyright {
   padding: 16px 0 8px;
-  border-top: 1px solid #dfe5ec;
+  border-top: 1px solid var(--bg-navy-light);
   text-align: center;
 }
 
