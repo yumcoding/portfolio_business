@@ -1,6 +1,7 @@
 const sectionTags = document.querySelectorAll(".section-tag");
 const sectionTitles = document.querySelectorAll(".section-title");
 const sectionDescs = document.querySelectorAll(".section-desc");
+const blockquotes = document.querySelectorAll("blockquote");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -29,6 +30,12 @@ const run = () => {
   sectionDescs.forEach((desc) => {
     if (isInViewport(desc)) {
       desc.classList.add("slide-in-left-delay");
+    }
+  });
+
+  blockquotes.forEach((quote) => {
+    if (isInViewport(quote)) {
+      quote.classList.add("fade-in-delay");
     }
   });
 };
