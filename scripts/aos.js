@@ -15,8 +15,6 @@ const run = () => {
   sectionTags.forEach((tag) => {
     if (isInViewport(tag)) {
       tag.classList.add("slide-in-left");
-    } else {
-      tag.classList.remove("slide-in-left");
     }
   });
 };
