@@ -1529,12 +1529,13 @@ button {
   }
 
   .landing-title-fixed {
-    margin-right: 5px;
+    margin-right: 15px;
   }
 
   .landing-title-rotate {
     width: 365px;
     max-width: 100%;
+    text-align: left;
   }
 
   .landing-desc {
