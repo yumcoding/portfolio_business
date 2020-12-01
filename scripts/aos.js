@@ -1,3 +1,4 @@
+const landingDesc = document.querySelector(".landing-desc");
 const sectionTags = document.querySelectorAll(".section-tag");
 const sectionTitles = document.querySelectorAll(".section-title");
 const sectionDescs = document.querySelectorAll(".section-desc");
@@ -15,6 +16,10 @@ const isInViewport = (el) => {
 };
 
 const run = () => {
+  if (isInViewport(landingDesc)) {
+    landingDesc.classList.add("fade-in");
+  }
+
   sectionTags.forEach((tag) => {
     if (isInViewport(tag)) {
       tag.classList.add("slide-in-left");
