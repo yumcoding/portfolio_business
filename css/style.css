@@ -204,8 +204,7 @@ button {
   line-height: 0.875rem;
 }
 
-.nav-menu-list li a:hover,
-.nav-menu-list li a.current {
+.nav-menu-list li a:hover {
   color: var(--primary);
 }
 
