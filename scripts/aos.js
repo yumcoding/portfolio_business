@@ -3,6 +3,8 @@ const sectionTags = document.querySelectorAll(".section-tag");
 const sectionTitles = document.querySelectorAll(".section-title");
 const sectionDescs = document.querySelectorAll(".section-desc");
 const blockquotes = document.querySelectorAll("blockquote");
+const detailIcons = document.querySelectorAll(".detail-icon");
+const detailBodys = document.querySelectorAll(".detail-body");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -41,6 +43,18 @@ const run = () => {
   blockquotes.forEach((quote) => {
     if (isInViewport(quote)) {
       quote.classList.add("fade-in-delay");
+    }
+  });
+
+  detailIcons.forEach((icon) => {
+    if (isInViewport(icon)) {
+      icon.classList.add("flipX");
+    }
+  });
+
+  detailBodys.forEach((detail) => {
+    if (isInViewport(detail)) {
+      detail.classList.add("fade-in");
     }
   });
 };

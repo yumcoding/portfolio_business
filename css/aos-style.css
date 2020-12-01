@@ -3,8 +3,14 @@
 .section-tag,
 .section-title,
 .section-desc,
-blockquote {
+blockquote,
+.detail-icon,
+.detail-body {
   opacity: 0;
+}
+
+.hexagon {
+  transform-style: preserve-3d;
 }
 
 /* slide-in */
@@ -58,6 +64,28 @@ blockquote {
   }
 
   100% {
+    opacity: 1;
+  }
+}
+
+/* flip */
+.flipX {
+  animation: flipX 1.5s ease-in-out both;
+}
+
+@keyframes flipX {
+  0% {
+    transform: perspective(25rem) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(25rem) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(25rem) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(25rem) rotateX(0deg);
     opacity: 1;
   }
 }
