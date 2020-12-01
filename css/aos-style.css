@@ -1,0 +1,40 @@
+/* set opacity:0 to animation-related elements  */
+.section-tag {
+  opacity: 0;
+}
+
+/* slide-in */
+.slide-in-left {
+  animation: slideInLeft 0.75s ease both;
+}
+
+.slide-in-left-delay {
+  animation: slideInLeft 0.75s ease both;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-18.75rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.75s ease both;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(81.25rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
