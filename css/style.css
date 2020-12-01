@@ -1477,7 +1477,7 @@ button {
 @media screen and (min-width: 768px) {
   /* Header */
   .page-header {
-    padding: 6px 80px;
+    padding: 6px 10px;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
