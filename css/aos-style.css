@@ -1,5 +1,7 @@
 /* set opacity:0 to animation-related elements  */
-.section-tag {
+.section-tag,
+.section-title,
+.section-desc {
   opacity: 0;
 }
 

@@ -1,4 +1,6 @@
 const sectionTags = document.querySelectorAll(".section-tag");
+const sectionTitles = document.querySelectorAll(".section-title");
+const sectionDescs = document.querySelectorAll(".section-desc");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -15,6 +17,18 @@ const run = () => {
   sectionTags.forEach((tag) => {
     if (isInViewport(tag)) {
       tag.classList.add("slide-in-left");
+    }
+  });
+
+  sectionTitles.forEach((title) => {
+    if (isInViewport(title)) {
+      title.classList.add("slide-in-left-delay");
+    }
+  });
+
+  sectionDescs.forEach((desc) => {
+    if (isInViewport(desc)) {
+      desc.classList.add("slide-in-left-delay");
     }
   });
 };
