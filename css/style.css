@@ -1501,6 +1501,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
   }
 
   .nav-menu-list li a {
@@ -1726,6 +1727,11 @@ button {
 }
 
 @media screen and (min-width: 992px) {
+  /* Page Header - Nav Bar */
+  .page-header {
+    padding: 6px 80px;
+  }
+
   /* Intro */
   .intro-main {
     max-width: 960px;
