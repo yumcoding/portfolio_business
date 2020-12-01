@@ -5,7 +5,8 @@
 .section-desc,
 blockquote,
 .detail-icon,
-.detail-body {
+.detail-body,
+.card {
   opacity: 0;
 }
 

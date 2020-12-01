@@ -5,6 +5,7 @@ const sectionDescs = document.querySelectorAll(".section-desc");
 const blockquotes = document.querySelectorAll("blockquote");
 const detailIcons = document.querySelectorAll(".detail-icon");
 const detailBodys = document.querySelectorAll(".detail-body");
+const servicesCards = document.querySelectorAll(".card");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -55,6 +56,16 @@ const run = () => {
   detailBodys.forEach((detail) => {
     if (isInViewport(detail)) {
       detail.classList.add("fade-in");
+    }
+  });
+
+  servicesCards.forEach((card, i) => {
+    if (isInViewport(card)) {
+      if (i % 2 === 0) {
+        card.classList.add("slide-in-left");
+      } else {
+        card.classList.add("slide-in-right");
+      }
     }
   });
 };
