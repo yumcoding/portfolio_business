@@ -11,7 +11,8 @@ blockquote,
 .area-2.tab,
 .testimonial-title,
 .testimonial-desc,
-.testi-img {
+.testi-img,
+.section-list {
   opacity: 0;
 }
 
