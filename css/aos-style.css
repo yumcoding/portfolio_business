@@ -13,7 +13,8 @@ blockquote,
 .testimonial-desc,
 .testi-img,
 .section-list,
-.call-me-form {
+.call-me-form,
+.projects-container .btn-container {
   opacity: 0;
 }
 

@@ -13,6 +13,9 @@ const testimonialDesc = document.querySelector(".testimonial-desc");
 const testimonialImages = document.querySelectorAll(".testi-img");
 const sectionLists = document.querySelectorAll(".section-list");
 const callMeForm = document.querySelector(".call-me-form");
+const projectsFilter = document.querySelector(
+  ".projects-container .btn-container"
+);
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -106,6 +109,10 @@ const run = () => {
 
   if (isInViewport(callMeForm)) {
     callMeForm.classList.add("slide-in-right");
+  }
+
+  if (isInViewport(projectsFilter)) {
+    projectsFilter.classList.add("fade-in-delay");
   }
 };
 
