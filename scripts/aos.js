@@ -18,6 +18,7 @@ const projectsFilter = document.querySelector(
 );
 const teamCards = document.querySelectorAll(".team-card");
 const address = document.querySelector("address");
+const socials = document.querySelectorAll(".social");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -130,6 +131,12 @@ const run = () => {
   if (isInViewport(address)) {
     address.classList.add("fade-in-delay");
   }
+
+  socials.forEach((social) => {
+    if (isInViewport(social)) {
+      social.classList.add("flipX");
+    }
+  });
 };
 
 // Event Listeners
