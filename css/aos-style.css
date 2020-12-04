@@ -12,7 +12,8 @@ blockquote,
 .testimonial-title,
 .testimonial-desc,
 .testi-img,
-.section-list {
+.section-list,
+.call-me-form {
   opacity: 0;
 }
 
