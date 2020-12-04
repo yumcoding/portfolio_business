@@ -16,6 +16,7 @@ const callMeForm = document.querySelector(".call-me-form");
 const projectsFilter = document.querySelector(
   ".projects-container .btn-container"
 );
+const teamCards = document.querySelectorAll(".team-card");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -114,6 +115,16 @@ const run = () => {
   if (isInViewport(projectsFilter)) {
     projectsFilter.classList.add("fade-in-delay");
   }
+
+  teamCards.forEach((card, i) => {
+    if (isInViewport(card)) {
+      if (i % 2 === 0) {
+        card.classList.add("slide-in-left");
+      } else {
+        card.classList.add("slide-in-right");
+      }
+    }
+  });
 };
 
 // Event Listeners

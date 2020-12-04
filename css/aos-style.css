@@ -14,7 +14,8 @@ blockquote,
 .testi-img,
 .section-list,
 .call-me-form,
-.projects-container .btn-container {
+.projects-container .btn-container,
+.team-card {
   opacity: 0;
 }
 
