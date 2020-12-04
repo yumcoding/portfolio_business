@@ -10,7 +10,8 @@ blockquote,
 .area-2.acco,
 .area-2.tab,
 .testimonial-title,
-.testimonial-desc {
+.testimonial-desc,
+.testi-img {
   opacity: 0;
 }
 

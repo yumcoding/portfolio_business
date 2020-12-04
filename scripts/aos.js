@@ -10,6 +10,7 @@ const area2Acco = document.querySelector(".area-2.acco");
 const area2Tab = document.querySelector(".area-2.tab");
 const testimonialTitle = document.querySelector(".testimonial-title");
 const testimonialDesc = document.querySelector(".testimonial-desc");
+const testimonialImages = document.querySelectorAll(".testi-img");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -88,6 +89,12 @@ const run = () => {
   if (isInViewport(testimonialDesc)) {
     testimonialDesc.classList.add("fade-in-delay");
   }
+
+  testimonialImages.forEach((img) => {
+    if (isInViewport(img)) {
+      img.classList.add("fade-in-delay");
+    }
+  });
 };
 
 // Event Listeners
