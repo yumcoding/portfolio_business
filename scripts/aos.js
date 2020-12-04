@@ -17,6 +17,7 @@ const projectsFilter = document.querySelector(
   ".projects-container .btn-container"
 );
 const teamCards = document.querySelectorAll(".team-card");
+const address = document.querySelector("address");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -125,6 +126,10 @@ const run = () => {
       }
     }
   });
+
+  if (isInViewport(address)) {
+    address.classList.add("fade-in-delay");
+  }
 };
 
 // Event Listeners

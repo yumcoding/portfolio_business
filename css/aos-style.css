@@ -15,7 +15,8 @@ blockquote,
 .section-list,
 .call-me-form,
 .projects-container .btn-container,
-.team-card {
+.team-card,
+address {
   opacity: 0;
 }
 
