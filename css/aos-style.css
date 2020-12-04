@@ -8,7 +8,9 @@ blockquote,
 .detail-body,
 .card,
 .area-2.acco,
-.area-2.tab {
+.area-2.tab,
+.testimonial-title,
+.testimonial-desc {
   opacity: 0;
 }
 

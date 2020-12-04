@@ -8,6 +8,8 @@ const detailBodys = document.querySelectorAll(".detail-body");
 const servicesCards = document.querySelectorAll(".card");
 const area2Acco = document.querySelector(".area-2.acco");
 const area2Tab = document.querySelector(".area-2.tab");
+const testimonialTitle = document.querySelector(".testimonial-title");
+const testimonialDesc = document.querySelector(".testimonial-desc");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -77,6 +79,14 @@ const run = () => {
 
   if (isInViewport(area2Tab)) {
     area2Tab.classList.add("slide-in-right");
+  }
+
+  if (isInViewport(testimonialTitle)) {
+    testimonialTitle.classList.add("fade-in");
+  }
+
+  if (isInViewport(testimonialDesc)) {
+    testimonialDesc.classList.add("fade-in-delay");
   }
 };
 
