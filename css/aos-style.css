@@ -6,7 +6,9 @@
 blockquote,
 .detail-icon,
 .detail-body,
-.card {
+.card,
+.area-2.acco,
+.area-2.tab {
   opacity: 0;
 }
 

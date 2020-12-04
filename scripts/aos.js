@@ -6,6 +6,8 @@ const blockquotes = document.querySelectorAll("blockquote");
 const detailIcons = document.querySelectorAll(".detail-icon");
 const detailBodys = document.querySelectorAll(".detail-body");
 const servicesCards = document.querySelectorAll(".card");
+const area2Acco = document.querySelector(".area-2.acco");
+const area2Tab = document.querySelector(".area-2.tab");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -68,6 +70,14 @@ const run = () => {
       }
     }
   });
+
+  if (isInViewport(area2Acco)) {
+    area2Acco.classList.add("slide-in-left");
+  }
+
+  if (isInViewport(area2Tab)) {
+    area2Tab.classList.add("slide-in-right");
+  }
 };
 
 // Event Listeners
