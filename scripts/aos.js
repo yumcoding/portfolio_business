@@ -19,6 +19,7 @@ const projectsFilter = document.querySelector(
 const teamCards = document.querySelectorAll(".team-card");
 const address = document.querySelector("address");
 const socials = document.querySelectorAll(".social");
+const contactForm = document.querySelector(".contact-form");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -137,6 +138,10 @@ const run = () => {
       social.classList.add("flipX");
     }
   });
+
+  if (isInViewport(contactForm)) {
+    contactForm.classList.add("slide-in-right-delay");
+  }
 };
 
 // Event Listeners

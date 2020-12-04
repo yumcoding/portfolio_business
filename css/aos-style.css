@@ -16,7 +16,8 @@ blockquote,
 .call-me-form,
 .projects-container .btn-container,
 .team-card,
-address {
+address,
+.contact-form {
   opacity: 0;
 }
 
@@ -47,6 +48,11 @@ address {
 
 .slide-in-right {
   animation: slideInRight 0.75s ease both;
+}
+
+.slide-in-right-delay {
+  animation: slideInRight 0.75s ease both;
+  animation-delay: 0.5s;
 }
 
 @keyframes slideInRight {
