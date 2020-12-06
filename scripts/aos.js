@@ -6,7 +6,7 @@ const blockquotes = document.querySelectorAll("blockquote");
 const detailIcons = document.querySelectorAll(".detail-icon");
 const detailBodys = document.querySelectorAll(".detail-body");
 const cardImgs = document.querySelectorAll(".card img");
-const area2Acco = document.querySelector(".area-2.acco");
+const accoTitle = document.querySelector(".area-2.acco h2");
 const area2Tab = document.querySelector(".area-2.tab");
 const testimonialTitle = document.querySelector(".testimonial-title");
 const testimonialDesc = document.querySelector(".testimonial-desc");
@@ -84,8 +84,9 @@ const run = () => {
     }
   });
 
-  if (isInViewport(area2Acco)) {
-    area2Acco.classList.add("slide-in-left");
+  if (isInViewport(accoTitle)) {
+    const accoList = accoTitle.parentElement;
+    accoList.classList.add("slide-in-left");
   }
 
   if (isInViewport(area2Tab)) {
