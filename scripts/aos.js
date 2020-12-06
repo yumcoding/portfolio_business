@@ -7,7 +7,7 @@ const detailIcons = document.querySelectorAll(".detail-icon");
 const detailBodys = document.querySelectorAll(".detail-body");
 const cardImgs = document.querySelectorAll(".card img");
 const accoTitle = document.querySelector(".area-2.acco h2");
-const area2Tab = document.querySelector(".area-2.tab");
+const tabTitle = document.querySelector(".tab-title-container");
 const testimonialTitle = document.querySelector(".testimonial-title");
 const testimonialDesc = document.querySelector(".testimonial-desc");
 const testimonialImages = document.querySelectorAll(".testi-img");
@@ -89,8 +89,9 @@ const run = () => {
     accoList.classList.add("slide-in-left");
   }
 
-  if (isInViewport(area2Tab)) {
-    area2Tab.classList.add("slide-in-right");
+  if (isInViewport(tabTitle)) {
+    const tab = tabTitle.parentElement;
+    tab.classList.add("slide-in-right");
   }
 
   if (isInViewport(testimonialTitle)) {
