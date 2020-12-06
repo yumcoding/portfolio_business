@@ -5,7 +5,7 @@ const sectionDescs = document.querySelectorAll(".section-desc");
 const blockquotes = document.querySelectorAll("blockquote");
 const detailIcons = document.querySelectorAll(".detail-icon");
 const detailBodys = document.querySelectorAll(".detail-body");
-const servicesCards = document.querySelectorAll(".card");
+const cardImgs = document.querySelectorAll(".card img");
 const area2Acco = document.querySelector(".area-2.acco");
 const area2Tab = document.querySelector(".area-2.tab");
 const testimonialTitle = document.querySelector(".testimonial-title");
@@ -73,8 +73,9 @@ const run = () => {
     }
   });
 
-  servicesCards.forEach((card, i) => {
-    if (isInViewport(card)) {
+  cardImgs.forEach((img, i) => {
+    if (isInViewport(img)) {
+      const card = img.parentElement;
       if (i % 2 === 0) {
         card.classList.add("slide-in-left");
       } else {
