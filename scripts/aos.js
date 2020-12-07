@@ -19,6 +19,16 @@ const projectsFilter = document.querySelector(
 );
 const teamCards = document.querySelectorAll(".team-card");
 const aboutImg = document.querySelector(".about-img-container");
+const aboutContent = document.querySelector(".about-content-container");
+const aboutTag = document.querySelector(
+  ".about-content-container .section-tag"
+);
+const aboutTitle = document.querySelector(
+  ".about-content-container .section-title"
+);
+const aboutDesc = document.querySelector(
+  ".about-content-container .section-desc"
+);
 const address = document.querySelector("address");
 const socials = document.querySelectorAll(".social");
 const socialTitle = document.querySelector(".contact-social-title");
@@ -204,6 +214,17 @@ const run = () => {
         card.classList.add("fade-in-delay");
       }
     });
+
+    //About
+    if (isInViewport(aboutTag)) {
+      aboutTag.classList.add("slide-in-right");
+    }
+    if (isInViewport(aboutTitle)) {
+      aboutTitle.classList.add("slide-in-right-delay");
+    }
+    if (isInViewport(aboutDesc)) {
+      aboutDesc.classList.add("slide-in-right-delay");
+    }
   }
 };
 
