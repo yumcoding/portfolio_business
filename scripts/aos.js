@@ -217,13 +217,13 @@ const run = () => {
 
     //About
     if (isInViewport(aboutTag)) {
-      aboutTag.classList.add("slide-in-right");
+      aboutTag.classList.add("fade-in");
     }
     if (isInViewport(aboutTitle)) {
-      aboutTitle.classList.add("slide-in-right-delay");
+      aboutTitle.classList.add("fade-in-delay");
     }
     if (isInViewport(aboutDesc)) {
-      aboutDesc.classList.add("slide-in-right-delay");
+      aboutDesc.classList.add("fade-in-delay");
     }
   }
 };
