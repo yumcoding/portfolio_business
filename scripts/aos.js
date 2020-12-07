@@ -109,16 +109,6 @@ const run = () => {
     projectsFilter.classList.add("fade-in-delay");
   }
 
-  teamCards.forEach((card, i) => {
-    if (isInViewport(card)) {
-      if (i % 2 === 0) {
-        card.classList.add("slide-in-left");
-      } else {
-        card.classList.add("slide-in-right");
-      }
-    }
-  });
-
   if (isInViewport(address)) {
     address.classList.add("fade-in-delay");
   }
@@ -161,6 +151,17 @@ const run = () => {
       const tab = tabTitle.parentElement;
       tab.classList.add("slide-in-right");
     }
+
+    //Our Team
+    teamCards.forEach((card, i) => {
+      if (isInViewport(card)) {
+        if (i % 2 === 0) {
+          card.classList.add("slide-in-left");
+        } else {
+          card.classList.add("slide-in-right");
+        }
+      }
+    });
   } else {
     //Services Card
     cardImgs.forEach((img, i) => {
@@ -191,6 +192,13 @@ const run = () => {
       const tab = tabTitle.parentElement;
       tab.classList.add("slide-in-left");
     }
+
+    //Our Team
+    teamCards.forEach((card) => {
+      if (isInViewport(card)) {
+        card.classList.add("fade-in-delay");
+      }
+    });
   }
 };
 
