@@ -3,6 +3,7 @@ const sectionTags = document.querySelectorAll(".section-tag");
 const sectionTitles = document.querySelectorAll(".section-title");
 const sectionDescs = document.querySelectorAll(".section-desc");
 const blockquotes = document.querySelectorAll("blockquote");
+const introImg = document.querySelector(".intro-img");
 const detailIcons = document.querySelectorAll(".detail-icon");
 const detailBodys = document.querySelectorAll(".detail-body");
 const cardImgs = document.querySelectorAll(".card img");
@@ -60,6 +61,10 @@ const run = () => {
       quote.classList.add("fade-in-delay");
     }
   });
+
+  if (isInViewport(introImg)) {
+    introImg.classList.add("fade-in");
+  }
 
   detailIcons.forEach((icon) => {
     if (isInViewport(icon)) {
