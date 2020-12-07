@@ -18,6 +18,7 @@ const projectsFilter = document.querySelector(
   ".projects-container .btn-container"
 );
 const teamCards = document.querySelectorAll(".team-card");
+const aboutImg = document.querySelector(".about-img-container");
 const address = document.querySelector("address");
 const socials = document.querySelectorAll(".social");
 const socialTitle = document.querySelector(".contact-social-title");
@@ -107,6 +108,10 @@ const run = () => {
 
   if (isInViewport(projectsFilter)) {
     projectsFilter.classList.add("fade-in-delay");
+  }
+
+  if (isInViewport(aboutImg)) {
+    aboutImg.classList.add("fade-in");
   }
 
   if (isInViewport(address)) {
