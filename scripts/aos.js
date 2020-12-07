@@ -148,6 +148,7 @@ const run = () => {
   }
 
   if (!breakpointLg.matches) {
+    // Services Card
     cardImgs.forEach((img, i) => {
       if (isInViewport(img)) {
         const card = img.parentElement;
@@ -159,6 +160,7 @@ const run = () => {
       }
     });
   } else {
+    //Services Card
     cardImgs.forEach((img, i) => {
       if (isInViewport(img)) {
         const card = img.parentElement;
