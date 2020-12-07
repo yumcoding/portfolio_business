@@ -1,3 +1,6 @@
+//DOM elements related to BackToTop Button
+const backToTopBtn = document.querySelector(".back-to-top");
+
 // DOM elements related to Accordion Menu
 const accoList = document.querySelector(".acco-list");
 const accoTitles = document.querySelectorAll(".acco-title");
@@ -24,6 +27,17 @@ const projectContainer = document.querySelector(".project-grid-container");
 const modalContainer = document.querySelector(".modal-container");
 const modalContents = document.querySelectorAll(".modal-content");
 
+//show BackToTop Button
+const showBtn = () => {
+  if (
+    document.body.scrollTop >= 200 ||
+    document.documentElement.scrollTop >= 200
+  ) {
+    backToTopBtn.style.display = "inline";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
 // show accordion menu
 accoTitles[0].classList.add("active");
 accoDescs[0].classList.add("show");
@@ -175,6 +189,8 @@ const closeModalBtn = (e) => {
 };
 
 // Event Listeners
+window.addEventListener("scroll", showBtn);
+
 accoList.addEventListener("click", showAcco);
 
 tabTitleContainer.addEventListener("click", showTab);
