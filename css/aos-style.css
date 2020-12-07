@@ -74,6 +74,10 @@ address,
 }
 
 .fade-in-delay {
+  animation: fadeIn 1s ease 0.5s both;
+}
+
+.fade-in-delay-double {
   animation: fadeIn 1s ease 1s both;
 }
 

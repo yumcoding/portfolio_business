@@ -23,6 +23,8 @@ const socials = document.querySelectorAll(".social");
 const socialTitle = document.querySelector(".contact-social-title");
 const contactForm = document.querySelector(".contact-form");
 
+const breakpointLg = window.matchMedia("screen and (min-width: 992px)");
+
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
@@ -76,17 +78,6 @@ const run = () => {
   detailBodys.forEach((detail) => {
     if (isInViewport(detail)) {
       detail.classList.add("fade-in");
-    }
-  });
-
-  cardImgs.forEach((img, i) => {
-    if (isInViewport(img)) {
-      const card = img.parentElement;
-      if (i % 2 === 0) {
-        card.classList.add("slide-in-left");
-      } else {
-        card.classList.add("slide-in-right");
-      }
     }
   });
 
@@ -154,6 +145,36 @@ const run = () => {
 
   if (isInViewport(contactForm)) {
     contactForm.classList.add("slide-in-right-delay");
+  }
+
+  if (!breakpointLg.matches) {
+    cardImgs.forEach((img, i) => {
+      if (isInViewport(img)) {
+        const card = img.parentElement;
+        if (i % 2 === 0) {
+          card.classList.add("slide-in-left");
+        } else {
+          card.classList.add("slide-in-right");
+        }
+      }
+    });
+  } else {
+    cardImgs.forEach((img, i) => {
+      if (isInViewport(img)) {
+        const card = img.parentElement;
+        switch (i) {
+          case 0:
+            card.classList.add("fade-in");
+            break;
+          case 1:
+            card.classList.add("fade-in-delay");
+            break;
+          case 2:
+            card.classList.add("fade-in-delay-double");
+            break;
+        }
+      }
+    });
   }
 };
 
