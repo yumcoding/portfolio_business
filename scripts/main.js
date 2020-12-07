@@ -33,9 +33,11 @@ const showBtn = () => {
     document.body.scrollTop >= 200 ||
     document.documentElement.scrollTop >= 200
   ) {
-    backToTopBtn.style.display = "inline";
+    backToTopBtn.classList.add("fade-in");
+    backToTopBtn.classList.remove("fade-out");
   } else {
-    backToTopBtn.style.display = "none";
+    backToTopBtn.classList.add("fade-out");
+    backToTopBtn.classList.remove("fade-in");
   }
 };
 // show accordion menu
