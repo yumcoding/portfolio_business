@@ -20,6 +20,7 @@ const projectsFilter = document.querySelector(
 const teamCards = document.querySelectorAll(".team-card");
 const address = document.querySelector("address");
 const socials = document.querySelectorAll(".social");
+const socialTitle = document.querySelector(".contact-social-title");
 const contactForm = document.querySelector(".contact-form");
 
 const isInViewport = (el) => {
@@ -139,6 +140,10 @@ const run = () => {
 
   if (isInViewport(address)) {
     address.classList.add("fade-in-delay");
+  }
+
+  if (isInViewport(socialTitle)) {
+    socialTitle.classList.add("fade-in-delay");
   }
 
   socials.forEach((social) => {
