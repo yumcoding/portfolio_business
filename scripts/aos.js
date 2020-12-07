@@ -81,16 +81,6 @@ const run = () => {
     }
   });
 
-  if (isInViewport(accoTitle)) {
-    const accoList = accoTitle.parentElement;
-    accoList.classList.add("slide-in-left");
-  }
-
-  if (isInViewport(tabTitle)) {
-    const tab = tabTitle.parentElement;
-    tab.classList.add("slide-in-right");
-  }
-
   if (isInViewport(testimonialTitle)) {
     testimonialTitle.classList.add("fade-in");
   }
@@ -159,6 +149,18 @@ const run = () => {
         }
       }
     });
+
+    //Services Accordion
+    if (isInViewport(accoTitle)) {
+      const accoList = accoTitle.parentElement;
+      accoList.classList.add("slide-in-left");
+    }
+
+    //Services Tab
+    if (isInViewport(tabTitle)) {
+      const tab = tabTitle.parentElement;
+      tab.classList.add("slide-in-right");
+    }
   } else {
     //Services Card
     cardImgs.forEach((img, i) => {
@@ -177,6 +179,18 @@ const run = () => {
         }
       }
     });
+
+    //Services Accordion
+    if (isInViewport(accoTitle)) {
+      const accoList = accoTitle.parentElement;
+      accoList.classList.add("slide-in-right");
+    }
+
+    //Services Tab
+    if (isInViewport(tabTitle)) {
+      const tab = tabTitle.parentElement;
+      tab.classList.add("slide-in-left");
+    }
   }
 };
 
