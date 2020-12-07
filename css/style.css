@@ -132,6 +132,15 @@ button {
   font-style: normal;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Header */
 
 .page-header {
@@ -665,15 +674,6 @@ button {
 
 #tab-2.show {
   display: flex;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* tab-1 */
