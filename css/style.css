@@ -1540,6 +1540,7 @@ button {
   }
 
   .nav-menu-list {
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: row;
