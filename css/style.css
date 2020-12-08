@@ -222,6 +222,9 @@ button {
   margin: 12px 0;
   display: none;
   flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: all 350ms ease-in-out;
 }
 
 .nav-menu-list li a {
@@ -239,6 +242,7 @@ button {
 
 .nav-menu-list.show {
   display: flex;
+  height: auto;
 }
 
 /* Landing */

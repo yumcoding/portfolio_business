@@ -6,14 +6,44 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
 
 //toggle menu (mobile)
-const toggleMenu = () => {
-  toggleBtn.classList.toggle("close");
-  menuList.classList.toggle("show");
+
+const getHeight = (elem) => {
+  elem.style.display = "flex";
+  const height = elem.scrollHeight + "px";
+  elem.style.display = "";
+  return height;
 };
 
-const closeNav = (e) => {
-  if (e.target.classList.contains("nav-link")) {
-    toggleMenu();
+const show = (elem) => {
+  const height = getHeight(elem);
+  elem.classList.add("show");
+  elem.style.height = height;
+  toggleBtn.classList.toggle("close");
+
+  window.setTimeout(() => {
+    elem.style.height = "";
+  }, 350);
+};
+
+const hide = (elem) => {
+  elem.style.height = elem.scrollHeight + "px";
+
+  toggleBtn.classList.toggle("close");
+
+  window.setTimeout(() => {
+    elem.style.height = "0";
+  }, 1);
+
+  window.setTimeout(() => {
+    elem.classList.remove("show");
+  }, 350);
+};
+
+const toggle = () => {
+  if (menuList.classList.contains("show")) {
+    hide(menuList);
+  } else {
+    show(menuList);
   }
 };
 
@@ -65,8 +95,7 @@ const findCurrentSection = () => {
 };
 
 //Event Listeners
-toggleBtn.addEventListener("click", toggleMenu);
-navBar.addEventListener("click", closeNav);
+toggleBtn.addEventListener("click", toggle);
 window.addEventListener("scroll", showNav);
 window.addEventListener("scroll", findCurrentSection);
 navBar.addEventListener("click", smoothScrolling);
