@@ -47,6 +47,13 @@ const toggle = () => {
   }
 };
 
+// close nav (mobile)
+const closeNav = (e) => {
+  if (e.target.classList.contains("nav-link")) {
+    hide(menuList);
+  }
+};
+
 // show nav on scroll
 const showNav = () => {
   if (
@@ -96,6 +103,7 @@ const findCurrentSection = () => {
 
 //Event Listeners
 toggleBtn.addEventListener("click", toggle);
+menuList.addEventListener("click", closeNav);
 window.addEventListener("scroll", showNav);
 window.addEventListener("scroll", findCurrentSection);
 navBar.addEventListener("click", smoothScrolling);
