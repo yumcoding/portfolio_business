@@ -45,7 +45,7 @@ const increaseNum = (numElem, endNum) => {
     i++;
     setTimeout(() => {
       increaseNum(numElem, endNum);
-    }, 3);
+    }, 15);
   }
 };
 
