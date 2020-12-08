@@ -139,6 +139,7 @@ const run = () => {
 
   numElems.forEach((numElem) => {
     if (isInViewport(numElem)) {
+      numElem.classList.add("fade-in");
       const endNum = numElem.getAttribute("data-num");
       increaseNum(numElem, endNum);
     }
