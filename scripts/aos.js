@@ -29,12 +29,25 @@ const aboutTitle = document.querySelector(
 const aboutDesc = document.querySelector(
   ".about-content-container .section-desc"
 );
+const numElems = document.querySelectorAll(".endNum");
 const address = document.querySelector("address");
 const socials = document.querySelectorAll(".social");
 const socialTitle = document.querySelector(".contact-social-title");
 const contactForm = document.querySelector(".contact-form");
 
 const breakpointLg = window.matchMedia("screen and (min-width: 992px)");
+
+//increasing number animation in about section
+let i = 0;
+const increaseNum = (numElem, endNum) => {
+  if (i <= endNum) {
+    numElem.innerHTML = i;
+    i++;
+    setTimeout(() => {
+      increaseNum(numElem, endNum);
+    }, 3);
+  }
+};
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -123,6 +136,13 @@ const run = () => {
   if (isInViewport(aboutImg)) {
     aboutImg.classList.add("fade-in");
   }
+
+  numElems.forEach((numElem) => {
+    if (isInViewport(numElem)) {
+      const endNum = numElem.getAttribute("data-num");
+      increaseNum(numElem, endNum);
+    }
+  });
 
   if (isInViewport(address)) {
     address.classList.add("fade-in-delay");
