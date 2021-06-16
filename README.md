@@ -1,11 +1,13 @@
-# UI 템플릿 클론 코딩
+# 🧬 UI 템플릿 클론 코딩
+
+<br/>
 
 ![business_desktop_landing](https://user-images.githubusercontent.com/64473833/122155048-21611880-cea1-11eb-8967-35594bc26b2e.png)
 <br/>
 <br/>
 <br/>
 
-## 개요
+## 📜 개요
 > 2020.11.17 ~ 2020.12.08 <br/>
 > UI 템플릿을 기반으로 반응형 웹사이트를 만드는 연습을 한 프로젝트 <br/>
 > Frontend 기여도 100% <br/>
@@ -14,7 +16,7 @@
 <br/>
 <br/>
 
-## 구현 내용
+## 👩‍💻 구현 내용
 + Media Query를 이용한 반응형 웹 구현
 + DOM API를 사용하여 HTML 요소를 추가/제거하고 스타일 변경
 + 스크롤에 따른 fade in과 slide in left/right 애니메이션 구현
