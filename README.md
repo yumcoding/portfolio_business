@@ -26,3 +26,21 @@
 <br/>
 <br/>
  
+## 🖼 시연 영상
+<br/>
+• 데스크탑 시연 영상 <br/>
+
+ <a href="http://www.youtube.com/watch?feature=player_embedded&v=LDisw9ORyhc
+" target="_blank"><img src="http://img.youtube.com/vi/LDisw9ORyhc/0.jpg" 
+alt="on desktop" width="560" height="315" border="10" /></a> <br/>
+<br/>
+<br/>
+  
+• 모바일 시연 영상 <br/>
+  
+   <a href="http://www.youtube.com/watch?feature=player_embedded&v=92nyfSjQRnY
+" target="_blank"><img src="http://img.youtube.com/vi/92nyfSjQRnY/0.jpg" 
+alt="on mobile" width="560" height="315" border="10" /></a> <br/>
+<br/>
+<br/>
+  
